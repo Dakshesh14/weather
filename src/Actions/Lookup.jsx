@@ -11,12 +11,11 @@ function Lookup() {
     const [loader, setLoader] = useState(true)
 
 
-    const APP_KEY = "1fcc521305ab66a930d3de8367ef13a7"
 
     // http://api.openweathermap.org/data/2.5/forecast?lat=21.251&lon=81.629&units=metric&appid=1fcc521305ab66a930d3de8367ef13a7
 
     // var url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${APP_KEY}`
-    var url = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${APP_KEY}`
+    var url = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=1fcc521305ab66a930d3de8367ef13a7`
 
     const [reports, setReports] = useState({})
 
