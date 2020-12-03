@@ -9,7 +9,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid col-sm-12 col-md-10 col-lg-10">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/weather">
                     <div className="navbar-logo">
                         <img src={Logo} alt="" className="img-fluid" />
                     </div>
@@ -20,7 +20,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto mb-2 mb-lg-0 align-items-center">
                         <li className="nav-item">
-                            <NavLink exact activeClassName="active" to="/" className="nav-link" aria-current="page">Home</NavLink>
+                            <NavLink exact activeClassName="active" to="/weather" className="nav-link" aria-current="page">Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink exact activeClassName="active" to="/about" className="nav-link">About</NavLink>
