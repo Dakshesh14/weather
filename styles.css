@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-main-container {
+    width: 30rem;
+    height: 19rem;
+    background: linear-gradient(rgba(50, 116, 109, 5.5), rgba(50, 116, 109, 0.5)), url("src/Static/Images/container-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-sub-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-heading h1 {
+    font-size: 4.5rem;
+    font-weight: lighter;
+    margin-left: 1.3rem;
+}
+
+.weather--city-container {
+    text-align: right;
+}
+
+.weather--city-container p{
+    font-weight: lighter;
+}
+
+.weather--city-container h1 {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.extra-detail--container {
+    text-align: right;
+}
+
+.extra-detail--container ul li{
+    list-style: none;
+
+}
+
+@media only screen and (max-width: 499px) {
+    .weather-sub-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .weather-heading h1 {
+        margin-left: 0;
+    }
+    .weather--city-container {
+        text-align: center;
+    }
+}
