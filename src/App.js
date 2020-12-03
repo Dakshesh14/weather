@@ -22,7 +22,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/" exact >
+        <Route path="/weather" exact >
             <Lookup/>
         </Route>
         <Route path="/about" exact component={About} />
