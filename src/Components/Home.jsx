@@ -17,7 +17,7 @@ function Home({ temp, feelsLike, temp_max, temp_min, wind_speed, main, city, dat
                 </div>
                 <div className="weather-sub-container">
                     <div className="weather--main">
-                        <img src={"http://openweathermap.org/img/wn/" + icon + "@2x.png"} alt={main} />
+                        <img src={"https://openweathermap.org/img/wn/" + icon + "@2x.png"} alt={main} />
                     </div>
                     <div className="extra-detail--container">
                         <ul className="m-0 p-0">
