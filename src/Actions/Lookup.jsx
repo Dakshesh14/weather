@@ -70,23 +70,27 @@ function Lookup() {
         )
     }
     return (
-        <div className="weather-app">
+        <div className="weather-app d-flex flex-column justify-content-center align-items-center">
             <div className="container">
                 <div className="row">
-                    <OwlCarousel className="owl-theme" loop items={1} margin={10} nav center navElement>
-                        {reports.list.map((x, i) => {
-                            if (i % 8 === 0) {
-                                return (
-                                    <Home key={i}
-                                        temp={x.main.temp} feelsLike={x.main.feels_like}
-                                        temp_max={x.main.temp_max} temp_min={x.main.temp_min}
-                                        wind_speed={x.wind.speed} main={x.weather[0].main}
-                                        city={reports.city.name} date={x.dt_txt} icon={x.weather[0].icon}
-                                    />
-                                )
-                            }
-                        })}
-                    </OwlCarousel>
+                    <div className="">
+                        <h1 className="font-white text-center mt-5">The five day weather forecast in {reports.city.name} are:</h1>
+                        <h5 className="font-white text-center">#Swipe to see all the forecast</h5>
+                        <OwlCarousel className="owl-theme" loop items={1} margin={10} nav center navElement>
+                            {reports.list.map((x, i) => {
+                                if (i % 8 === 0) {
+                                    return (
+                                        <Home key={i}
+                                            temp={x.main.temp} feelsLike={x.main.feels_like}
+                                            temp_max={x.main.temp_max} temp_min={x.main.temp_min}
+                                            wind_speed={x.wind.speed} main={x.weather[0].main}
+                                            city={reports.city.name} date={x.dt_txt} icon={x.weather[0].icon}
+                                        />
+                                    )
+                                }
+                            })}
+                        </OwlCarousel>
+                    </div>
                 </div>
             </div>
         </div>

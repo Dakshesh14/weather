@@ -23,6 +23,10 @@ body {
     height: 80vh;
 }
 
+.font-white {
+    color: #fff;
+}
+
 .navbar {
     padding: 1rem !important;
     position: sticky;
@@ -69,14 +73,14 @@ body {
 
 .weather-app {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: rgb(50, 116, 109);
     background: linear-gradient(175deg, rgba(50, 116, 109, 1) 0%, rgba(158, 197, 171, 1) 76%);
 }
 
 .weather-container-main {
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +130,20 @@ body {
 
 .extra-detail--container ul li {
     list-style: none;
+}
+
+.owl-dots button.owl-dot.active span {
+    background: var(--myrtle-green) !important;
+}
+
+.owl-dots button.owl-dot {
+    outline: none;
+    border: none;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+    border: none;
 }
 
 @media only screen and (max-width: 499px) {
